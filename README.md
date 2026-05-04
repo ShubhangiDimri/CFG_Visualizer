@@ -1,16 +1,50 @@
-# React + Vite
+# Control Flow Graph (CFG) Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A powerful, interactive web application designed for **Compiler Design** students and researchers to visualize source code as a Control Flow Graph. This tool decomposes code into basic blocks, maps execution paths, and calculates cyclomatic complexity in real-time.
 
-Currently, two official plugins are available:
+![CFG Visualizer Preview](https://raw.githubusercontent.com/ShubhangiDimri/CFG_Visualizer/main/public/preview.png) *(Note: Add your own screenshot link here)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- **Static Code Analysis**: Automatically parses JavaScript-like code structures.
+- **Support for Control Structures**:
+  - **Sequential Execution**: Standard linear statements.
+  - **Conditional Branching**: Full support for `if/else` logic with "True" and "False" labeled edges.
+  - **Iterative Loops**: Supports `while` loops with animated back-edges.
+- **Compiler Metrics**:
+  - **Basic Block Identification**: Automatically groups instructions into atomic units.
+  - **Cyclomatic Complexity**: Real-time calculation of $M = E - N + 2P$ to determine code complexity.
+- **Premium Visualization**:
+  - Diamond-shaped condition nodes and rectangular statement nodes.
+  - Interactive canvas with Zoom, Pan, and Fit-view.
+  - Glassmorphic dark theme for a modern academic feel.
+- **Quick Samples**: One-click buttons to load Sequential, Branching, Looping, and Complex examples for easy demonstration.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React (Vite)
+- **Graph Engine**: React Flow
+- **Styling**: Vanilla CSS (Custom Design System)
+- **Icons**: SVG / CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📊 Theory & Concepts
+
+### Basic Blocks
+In compiler theory, a **Basic Block** is a straight-line code sequence with no branches in except to the entry and no branches out except at the exit. This tool identifies these blocks to simplify the CFG construction.
+
+### Cyclomatic Complexity
+This metric measures the number of linearly independent paths through a program's source code. It is calculated using the formula:
+**M = E - N + 2**
+*   **E**: Number of edges in the graph.
+*   **N**: Number of nodes in the graph.
+*   A higher value indicates more complex code, requiring more extensive testing coverage.
+
+
+
+## 📖 Usage
+
+1. Open the application in your browser.
+2. Enter your code in the **Input Code** textarea.
+3. Click **Generate CFG** or use one of the **Quick Samples**.
+4. Explore the identified **Basic Blocks** and **Cyclomatic Complexity** in the sidebar and header.
+
