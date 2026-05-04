@@ -2,7 +2,6 @@
 
 A powerful, interactive web application designed for **Compiler Design** students and researchers to visualize source code as a Control Flow Graph. This tool decomposes code into basic blocks, maps execution paths, and calculates cyclomatic complexity in real-time.
 
-![CFG Visualizer Preview](https://raw.githubusercontent.com/ShubhangiDimri/CFG_Visualizer/main/public/preview.png) *(Note: Add your own screenshot link here)*
 
 ## 🚀 Features
 
