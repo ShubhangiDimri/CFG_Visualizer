@@ -16,7 +16,7 @@ A powerful, interactive web application designed for **Compiler Design** student
 - **Premium Visualization**:
   - Diamond-shaped condition nodes and rectangular statement nodes.
   - Interactive canvas with Zoom, Pan, and Fit-view.
-  - Glassmorphic dark theme for a modern academic feel.
+  - Clean light theme with yellow/orange accents for a modern academic feel.
 - **Quick Samples**: One-click buttons to load Sequential, Branching, Looping, and Complex examples for easy demonstration.
 
 ## 🛠️ Tech Stack
