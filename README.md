@@ -47,3 +47,9 @@ This metric measures the number of linearly independent paths through a program'
 3. Click **Generate CFG** or use one of the **Quick Samples**.
 4. Explore the identified **Basic Blocks** and **Cyclomatic Complexity** in the sidebar and header.
 
+## 🖼️ Screenshots
+
+![CFG Visualizer - if-else](public/screenshots/image.png)
+
+![CFG Visualizer - complex](public/screenshots/image2.png)
+
